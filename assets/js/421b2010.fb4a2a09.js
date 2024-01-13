@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkavail_doc=self.webpackChunkavail_doc||[]).push([[7250],{3782:e=>{e.exports=JSON.parse('{"title":"Optimum","slug":"/category/optimum","permalink":"/category/optimum","navigation":{"previous":{"title":"Genel Bak\u0131\u015f","permalink":"/build-with-avail/overview"},"next":{"title":"OP Stack","permalink":"/category/op-stack"}}}')}}]);
