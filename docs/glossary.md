@@ -15,11 +15,11 @@ image: https://availproject.github.io/img/avail/AvailDocs.png
 
 :::note KAVRAMLAR İÇİN REFERANS SÖZLÜK
 
-Avail belgeleri geliştirilme aşamasındayken, Sözlük temel kavramları detaylandırmak için kullanılıyor. Herhangi bir sorunuz veya endişeniz varsa lütfen Avail ekibiyle iletişime geçmekten çekinmeyin.
+Sözlük, Avail belgeleri geliştirilme aşamasındayken, temel kavramların doğru kullanılması için detaylandırılmıştır. Herhangi bir sorunuz veya şüpheniz varsa lütfen Avail ekibiyle iletişime geçmekten çekinmeyin.
 
 :::
 
-## Uygulama Zinciri (App-Chain) 
+## Uygulama Zinciri (App-Chain)
 
 Uygulama zincirleri, geliştiricilerin, paylaşılan blokzincirinin kısıtlamaları olmaksızın, kullanım ihtiyaçlarına göre özelleştirerek uygulamalarını optimize etmelerine olanak tanır. Belirli uygulamalara hizmet eden bağımsız zincirler olarak işlev görerek gelişmiş performans ve ölçeklenebilirlik sağlarlar. Uygulama zincirleri ayrıca geliştiricilerin bir validatör setini yönetme ve sürdürme ihtiyacını ortadan kaldırarak geliştirme sürecini basitleştirir. Avail, farklı katman 2 veya 3 ölçeklendirme çözümlerini temel alabilen modüler uygulama zinciri mimarilerinin oluşturulmasına olanak tanır.
 
@@ -47,145 +47,144 @@ Chilling, aday gösterme veya doğrulama rollerinden kasıtlı olarak çekilme e
 Validatörler ağdaki blok üretimi için ödüller kazanır. İlk önce toplam ödüllerinden düşülen bir komisyon oranı belirlerler. Kalan ödüller daha sonra bu komisyon oranına göre o validatörü destekleyen adaylara dağıtılır.
 
 ## Fikir Birliği (Consensus)
-Fikir birliği, node’ların blokzincirindeki hangi verilerin gerçek ve doğru olarak doğrulanabileceği konusunda bir anlaşmaya vardığı mekanizmayı ifade eder. Fikir birliği protokolü, işlemlerin nasıl düzenleneceğini ve Avail’deki [<ins>NPoS</ins>](#nominated-proof-of-stake) **(BURADAKİ LİNK DEĞİŞECEK)** ile zincire yeni blokların nasıl ekleneceğini belirler.
+Fikir birliği, node’ların blokzincirindeki hangi verilerin gerçek ve doğru olarak doğrulanabileceği konusunda bir anlaşmaya vardığı mekanizmayı ifade eder. Fikir birliği protokolü, işlemlerin nasıl düzenleneceğini ve Avail’deki [<ins>NPoS</ins>](#nominated-proof-of-stake) ile zincire yeni blokların nasıl ekleneceğini belirler.
 
 ## Denetleyici Hesabı (Controller Account)
 
 Denetleyici hesabı, staking faaliyetlerini yönetmek ve ağdaki işlemleri yürütmekle görevlidir. Bu, validatörleri aday gösterme, fonları bağlama ve çözme ve işlem ücretlerini ödeme gibi sorumlulukları içerir. Aktif rolü göz önüne alındığında, denetleyici anahtarı daha sık kullanılır ve hesabın günlük işlemleri için gereklidir.
 
-## Veri Doğrulama
+## Veri Doğrulama (Data Attestation)
 
-Data attestation involves confirming the authenticity and integrity of data. In Avail, this process ensures that data on the chain is both accessible and accurate. An Avail block header incorporates two attestations: KZG polynomial commitments for the provided data and the Merkle tree root with data blobs as leaves. A supermajority of Avail's validators achieve finality on the header by signing a chain that includes the header, utilizing the [<ins>GRANDPA</ins>](#grandpa) protocol.
+Veri doğrulama, verilerin doğruluğunun ve bütünlüğünün onaylanmasını içerir. Avail'deki bu süreç, zincirdeki verilerin hem erişilebilir hem de doğru olmasını sağlar. Bir Avail blok başlığı iki doğrulamayı içerir: KZG polinom commitment’leri ve Merkle ağacı kökünden yapılanmış yaprak niteliğindeki veri blobları. Avail validatörlerinin nitelikli çoğunluğu, [<ins>GRANDPA</ins>](#grandpa) protokolünü kullanan başlıklardan oluşan zinciri imzalayarak başlıklar üzerinden kesinliğe ulaşırlar.
 
-## Data Availability Committee (DAC)
+## Veri Kullanılabilirliği Komitesi (DAC)
 
-A Data Availability Committee (DAC) consists of a group of nodes responsible for preserving copies of off-chain data and ensuring its accessibility upon demand. DACs can be integral to scaling solutions that enhance a blockchain's throughput by managing transactions on a distinct layer, commonly referred to as off-chain scaling. Unlike DACs, which often cater to specific Layer 2 (L2) solutions, Avail stands out as a universally applicable data availability layer. It operates as an autonomous chain, ensuring a more impartial and versatile approach to data availability.
+Veri Kullanılabilirliği Komitesi (DAC), zincir dışı verilerin kopyalarını korumaktan ve talep üzerine erişilebilirliğini sağlamaktan sorumlu bir grup node’dan oluşur. DAC'ler, genellikle zincir dışı ölçeklendirme olarak adlandırılan farklı bir katmandaki işlemleri yöneterek bir blokzincirinin verimini artıran ölçeklendirme çözümlerinin ayrılmaz bir parçası olabilir. Genellikle belirli Katman 2 (L2) çözümlerine hitap eden DAC'lerin aksine Avail, evrensel olarak uygulanabilir bir veri kullanılabilirliği katmanı olarak öne çıkmaktadır. Otonom bir zincir olarak çalışarak veri kullanılabilirliğine daha tarafsız ve çok yönlü bir yaklaşım sağlar.
 
 ## Veri Kullanılabilirliği Örneklemesi (DAS)
 
-Data availability sampling allows light clients to confirm the availability of data without downloading complete blocks. Through this method, light clients engage in several rounds of random sampling for small chunks of block data. With each successful round, confidence that the data is available grows. When the light node achieves a set confidence threshold, they recognize the block data as accessible.
+Veri kullanılabilirliği örneklemesi, hafif istemcilerin tüm blokları indirmeden verilerin kullanılabilirliğini onaylamasına olanak tanır. Bu yöntem sayesinde, ışık istemcileri küçük blok veri parçaları için birkaç tur rastgele örnekleme yapar. Her başarılı turda, verilerin kullanılabilir olduğuna dair güven artar. Işık düğümü belirli bir güven eşiğine ulaştığında, blok verilerinin erişilebilir olduğunu kabul eder.
 
-## DHT (Distributed Hash Table)
+## DHT (Dağıtılmış İşlem Özeti Tablosu)
 
-A Distributed Hash Table (DHT) is a decentralized system offering a lookup service akin to a traditional hash table. It holds key-value pairs, enabling peers to swiftly find the value corresponding to a specific key. The DHT is pivotal in the process of sharing data cells, especially for random sampling and proof verification. It facilitates nodes in storing and identifying information about providers. Through the DHT, nodes in the network are interconnected, streamlining cell discovery and access.
+Dağıtılmış İşlem Özeti Tablosu (DHT), geleneksel işlem özeti tablosuna benzer bir arama hizmeti sunan merkezi olmayan bir sistemdir. Anahtar-değer çiftlerini tutarak eşlerin belirli bir anahtara karşılık gelen değeri hızlıca bulmasını sağlar. DHT, özellikle rastgele örnekleme ve kanıt doğrulama için veri hücrelerinin paylaşılması sürecinde çok önemlidir. Node’ların sağlayıcılar hakkında bilgi depolamasını ve tanımlamasını kolaylaştırır. DHT aracılığıyla ağdaki node’lar birbirine bağlanır, hücre keşfi ve erişimi kolaylaştırır.
 
-## Decoupling
+## Ayrıştırma (Decoupling)
 
-Decoupling in the context of blockchain refers to the strategic separation of distinct functionalities into independent modules or layers. By doing so, a modular blockchain can specialize and excel in specific tasks, rather than being burdened by the need to handle every function. This modular approach enhances efficiency, flexibility, and scalability, allowing each component to evolve and optimize independently.
+Blokzinciri bağlamında ayrıştırma, farklı işlevlerin bağımsız modüllere veya katmanlara stratejik olarak ayrılması anlamına gelir. Bu sayede modüler bir blok zinciri, her işlevi yerine getirme ihtiyacının yükünü taşımak yerine belirli görevlerde uzmanlaşabilir ve mükemmelleşebilir. Bu modüler yaklaşım verimliliği, esnekliği ve ölçeklenebilirliği artırarak her bir bileşenin bağımsız olarak gelişmesine ve optimize edilmesine olanak tanır.
 
-## Equivocation
+## İkircikli onay (Equivocation)
 
-Equivocation is when a validator signs two or more conflicting blocks or messages. This can be done intentionally or unintentionally.
+İkircikli onay, bir validatörün iki veya daha fazla çelişkili blok veya mesajı imzalamasıdır. Bu kasıtlı veya kasıtsız olarak yapılabilir.
 
-## Era
+## Dönem (Era)
 
-An Era in Avail represents a predefined number of [<ins>sessions</ins>](#session) during which the validator set is determined and rewards are distributed. At the onset of each era, validators are chosen to be part of the active set based on their staked amount. The selection also considers other factors, such as a validator's performance in the previous era—specifically, if they were inactive due to being chilled or slashed. Should a new validator stake a higher amount than current validators, or if an active validator underperforms, they can be replaced in the active set for the upcoming era.
+Avail'de bir dönem, validatör setinin belirlendiği ve ödüllerin dağıtıldığı önceden tanımlanmış sayıda oturumu temsil eder. Her dönemin başlangıcında, validatörler yatırdıkları miktara göre aktif kümenin bir parçası olmak üzere seçilir. Seçim yapılırken, validatörün bir önceki dönemdeki performansı gibi diğer faktörleri de göz önünde bulundurulur - özellikle, adaylıktan çekilme veya ilişiği kesilme nedeniyle inaktif değillerse. Yeni bir validatör mevcut validatörlerden daha yüksek bir miktar stake ederse ya da aktif bir validatör düşük performans gösterirse, gelecek dönem için aktif sette değiştirilebilir.
 
-## Epoch
+## Devir (Epoch)
 
-An Epoch is a designated time frame during which a specific group of validation nodes undertakes the task of verifying transactions and appending them to the blockchain. The duration of an epoch can vary across different blockchain networks.
+Epoch, belirli bir doğrulama node’ları grubunun işlemleri doğrulama ve bunları blokzincirine ekleme görevini üstlendiği belirlenmiş bir zaman dilimidir. Bir devirin süresi farklı blokzinciri ağlarında değişiklik gösterebilir.
 
-## Execution
+## Yürütme (Execution)
 
-In traditional blockchains, execution refers to how nodes process transactions to transition the blockchain between states. However, Avail operates differently. As a modular base chain, Avail does not possess a general-purpose execution layer. Instead, execution occurs in other layers, such as rollups, and the resulting data is posted to Avail in its raw form, without undergoing execution on Avail itself.
+Geleneksel blokzincirlerinde yürütme, node'ların blokzincirini durumlar arasında geçişini sağlamak için işlemleri nasıl işlediğini ifade eder. Ancak Avail farklı şekilde çalışır. Modüler bir temel zincir olan Avail, genel amaçlı bir yürütme katmanına sahip değildir. Bunun yerine, yürütme, rollup'lar gibi diğer katmanlarda gerçekleşir ve elde edilen veriler, Avail'in kendisinde yürütmeye tabi tutulmadan ham haliyle Avail'e gönderilir.
 
-In Avail's context, "Consensus" carries a more specific meaning than in typical blockchains with integrated execution layers. For Avail, consensus signifies the network's agreement that data has been appropriately published. Explicitly, validator nodes in Avail do not execute transactions as a prerequisite for attesting to the validity of blocks. With a few exceptions, such as balance transfers, validators primarily attest to the correct packaging of published data within blocks. This streamlined approach is a primary reason Avail can accommodate larger block sizes. Since validators undertake less work per block, increasing block size has a reduced impact compared to other blockchains.
+Avail'in bağlamında "Fikir Birliği", entegre yürütme katmanlarına sahip tipik blokzincirlerine kıyasla daha özel bir anlam taşır. Avail için fikir birliği, verilerin uygun şekilde yayınlandığına dair ağın mutabakat sağladığını ifade eder. Açık söylemek gerekirse, Avail'teki doğrulayıcı node'lar, blokların geçerliliğini onaylamak için bir ön koşul olarak işlem yürütmez. Bakiye transferleri gibi birkaç istisna dışında, validatörler öncelikle bloklar içinde yayınlanan verilerin doğru paketlendiğini onaylar. Bu kolaylaştırılmış yaklaşım, Avail'in daha büyük blok boyutlarını barındırabilmesinin temel nedenidir. Validatörler blok başına daha az iş üstlendiğinden, blok boyutunun artırılması diğer blokzincirlerine kıyasla daha düşük bir etkiye sahiptir.
 
-## Finality Gadget
+## Kesinlik Aracı (Finality Gadget)
 
-A finality gadget is a mechanism that ensures blockchain state finality by requiring validators' commitment through signed messages. Once sufficiently validated, the state is finalized and secure from malicious modifications.
+Kesinlik aracı, validatörlerin imzalı mesajlar aracılığıyla taahhütte bulunmasını gerektirerek blokzinciri durumunun kesinliğini sağlayan bir mekanizmadır. Yeterince doğrulandıktan sonra durum (state) son halini alır ve kötü niyetli değişikliklere karşı güvenli hale gelir.
 
-## Fraud Proofs
+## Hile Kanıtları (Fraud Proofs)
 
-Fraud proofs are cryptographic proofs employed to validate the legitimacy of a transaction or state transition on Avail. Any node can generate and share a fraud proof across the P2P network. App clients can then assess these proofs and respond accordingly.
+Hile kanıtları, Avail üzerinde bir işlemin veya durum geçişinin meşruiyetini doğrulamak için kullanılan kriptografik kanıtlardır. Herhangi bir node, P2P ağ üzerinden bir hile kanıtı oluşturabilir ve paylaşabilir. Uygulama istemcileri daha sonra bu kanıtları değerlendirebilir ve buna göre yanıt verebilir.
 
 ## GRANDPA
 
-GRANDPA (GHOST-based Recursive Ancestor Deriving Prefix Agreement), part of the Substrate framework, is the finality gadget Avail uses. Please refer to [the GRANDPA paper](https://github.com/w3f/consensus/blob/master/pdf/grandpa.pdf) for a full description of the protocol.
+Substrate altyapısının bir parçası olan GRANDPA (GHOST-based Recursive Ancestor Deriving Prefix Agreement), Avail'in kullandığı kesinlik aracıdır. Protokolün tam açıklaması için lütfen [the GRANDPA paper](https://github.com/w3f/consensus/blob/master/pdf/grandpa.pdf) makalesine bakınız.
 
-## KZG Commitments
+## KZG Taahhütleri (KZG Commitments)
 
-KZG commitments, pioneered by Aniket Kate, Gregory M. Zaverucha, and Ian Goldberg in 2010, offer a concise method for committing to polynomials. These commitments have recently gained prominence, especially in PLONK-like zero-knowledge frameworks.
+Aniket Kate, Gregory M. Zaverucha ve Ian Goldberg tarafından 2010’da öncülük edilen KZG taahhütleri, polinomlara taahhütte bulunmaları için özlü bir yöntem sunar. Bu taahhütler son zamanlarda özellikle PLONK benzeri sıfır bilgi çerçevelerinde önem kazanmıştır.
 
-In Avail's design, KZG commitments are employed for several key reasons:
+Avail'in tasarımında, KZG taahhütleri birkaç temel nedenden dolayı kullanılmaktadır:
 
-- They enable succinct commitments, ideal for inclusion in block headers.
-- They support brief openings, facilitating light client availability verification.
-- Their strong cryptographic binding ensures the prevention of fraud proofs by rendering the creation of false commitments
-  computationally challenging.
+- Blok başlıklarına dahil etmek için ideal olan kısa ve öz taahhütler sağlarlar.
+- Kısa açılışları destekleyerek hafif istemci kullanılabilirlik doğrulamasını kolaylaştırırlar.
+- Güçlü kriptografik bağları, sahte taahhütlerin oluşturulmasını hesaplama açısından zorlaştırarak hile kanıtlarının önlenmesini sağlar.
 
 ## Kademlia DHT (Kad-DHT)
 
-Kad-DHT is a specific Distributed Hash Table (DHT) variant that organizes nodes and data based on a chord ring—a logical arrangement of nodes ordered by their IDs. Avail employs Kad-DHT to establish a decentralized network for data storage and retrieval. In this structure, each node is tasked with holding a portion of the data. Nodes can directly communicate to access data. Avail utilizes Kad-DHT to store data cells and pinpoint which peer possesses a particular data segment, with matrix data cells uniquely mapped to Peer IDs.
+Kad-DHT, node'ları ve verileri akor halkasına -kimliklerine göre sıralanmış node'ların mantıksal düzenlemesine- göre düzenleyen özel bir Dağıtılmış İşlem Özeti Tablosu (DHT) varyantıdır. Avail, veriyi depolama ve veriyi yeniden alma için merkezi olmayan bir ağ oluşturmak üzere Kad-DHT'yi kullanır. Bu yapıda, her node verilerin bir kısmını tutmakla görevlidir. Node'lar verilere erişmek için doğrudan iletişim kurabilirler. Avail, veri hücrelerini depolamak ve hangi eşin belirli bir veri segmentine sahip olduğunu belirlemek için Kad-DHT'yi kullanır ve matris veri hücreleri benzersiz bir şekilde Eş Kimlikleriyle eşleştirilir.
 
 ## libp2p
 
-[<ins>libp2p</ins>](https://libp2p.io/) is an open-source modular network stack designed for constructing peer-to-peer (P2P) applications. It offers a flexible framework for data transfer across diverse transport protocols. Avail integrates libp2p to establish a decentralized network dedicated to data availability, ensuring that transaction data is efficiently stored and disseminated to validators and full nodes.
+libp2p,[<ins>libp2p</ins>](https://libp2p.io/), eşler arası (P2P) uygulamalar oluşturmak için tasarlanmış açık kaynaklı modüler bir ağ yığınıdır. Çeşitli transfer protokolleri arasında veri aktarımı için esnek bir çerçeve sunar. Avail, veri kullanılabilirliğine adanmış merkezi olmayan bir ağ kurmak için libp2p'yi entegre ederek işlem verilerinin verimli bir şekilde depolanmasını ve validatörlere ve tam node'lara dağıtılmasını sağlar.
 
-## Light Client
+## Hafif İstemci (Light Client)
 
-Light clients enable users to engage with a blockchain network without synchronizing the entire blockchain, preserving both decentralization and security. Typically, they retrieve only the blockchain headers, omitting the full block contents. Avail's light clients enhance this by employing Data Availability Sampling. This method ensures block content availability by downloading and verifying random segments of a block.
+Hafif istemciler, kullanıcıların tüm blokzincirini senkronize etmeden bir blokzinciri ağıyla etkileşime girmesini sağlayarak hem merkeziyetsizliği hem de güvenliği korur. Tipik olarak, tam blok içeriğini atlayarak yalnızca blokzinciri başlıklarını alırlar. Avail'in hafif istemcileri, Veri Kullanılabilirliği Örneklemesi kullanarak bunu geliştirir. Bu yöntem, bir bloğun rastgele segmentlerini indirip doğrulayarak blok içeriğinin kullanılabilirliğini sağlar.
 
-## Mainnet
+## Ana Ağ (Mainnet)
 
-A mainnet is a blockchain network that is fully operational and open to the public. It is the "production" version of a blockchain network, and it is where real-world transactions and applications are deployed. View the [Roadmap to Mainnet blog post](https://blog.availproject.org/road-to-mainnet-september-2023/) for more information on Avail's mainnet.
+Bir ana ağ, tamamen operasyonel ve halka açık bir blokzinciri ağıdır. Bir blokzinciri ağının "üretim" versiyonudur ve gerçek dünya işlemlerinin ve uygulamalarının dağıtıldığı yerdir.  Avail'in ana ağı hakkında daha fazla bilgi için  [Roadmap to Mainnet blog post](https://blog.availproject.org/road-to-mainnet-september-2023/) Mainnet'e Giden Yol Haritası blog gönderisini inceleyiniz.
 
-## Modular Blockchain
+## Modüler Blokzinciri (Modular Blockchain)
 
 A modular blockchain specializes in managing specific tasks while delegating other responsibilities to distinct layers or components.
 
-## Monolithic Blockchain
+## Monolitik Blokzinciri (Monolithic Blockchain)
 
-A monolithic blockchain encompasses all core functionalities (Execution, Settlement, Ordering, Data Availability) within a singular blockchain structure.
+Monolitik bir blokzinciri, tüm temel işlevleri (Yürütme, Mutabakat, Emir Verme, Veri Kullanılabilirliği) tekil bir blok zinciri yapısı içinde kapsar.
 
-## Nominated Proof of Stake
+## Aday Gösterilen Hisse İspatı (Nominated Proof of Stake)
 
-Nominated Proof of Stake (NPoS) is a consensus algorithm where users nominate validators to process blocks for them. These validators verify and append transactions to the blockchain. For their services, validators receive rewards in the form of the native tokens. They then commission a portion of these rewards to nominators based on a set commission rate. Avail uses NPoS as implemented within Substrate.
+Nominated Proof of Stake (NPoS), kullanıcıların kendileri için blokları işlemek üzere validatörleri aday gösterdikleri bir fikir birliği algoritmasıdır. Bu validatörler işlemleri doğrular ve blokzincirine ekler. Validatörler, hizmetleri karşılığında ilgili ağın tokenlerini ödül olarak alırlar. Daha sonra bu ödüllerin bir kısmını, belirlenen bir komisyon oranına göre aday gösterenlere komisyon olarak verirler. Avail, Substrate içinde uygulandığı şekliyle NPoS kullanır.
 
-## Oversubscribed
+## Aşırı Başvuru Talebi (Oversubscribed)
 
-Oversubscribed refers to a situation where the number of nominators wishing to participate in the consensus process exceeds the available slots.
+Aşırı talep, fikir birliği sürecine katılmak isteyen adayların sayısının mevcut slotları aştığı bir durumu ifade eder.
 
-## Scalability
+## Ölçeklenebilirlik (Scalability)
 
-Scalability within Avail pertains to the capacity to augment the volume of data disseminated by the chain, ensuring that the experience of its participants and users remains unaffected. Avail achieves this by adopting a modular approach, taking DA off-chain, which allows the main network to primarily focus on execution. This modular design facilitates the individual optimization of key constructs, enabling each component to be scaled according to its unique requirements.
+Avail'deki ölçeklenebilirlik, katılımcıların ve kullanıcıların deneyimlerinin etkilenmemesini sağlayarak zincir tarafından dağıtılan veri hacmini artırma kapasitesiyle ilgilidir. Avail bunu, DA'yı zincir dışına çıkaran modüler bir yaklaşım benimseyerek başarır ve bu da ana ağın öncelikle yürütmeye odaklanmasına olanak tanır. Bu modüler tasarım, temel yapıların bireysel optimizasyonunu kolaylaştırarak her bir bileşenin kendi benzersiz gereksinimlerine göre ölçeklendirilmesini sağlar.
 
-## Session
+## Oturum (Session)
 
-A session refers to a specific duration during which a fixed set of validators operate. Validators can enter or exit the set only at the transition between sessions.
+Oturum, sabit bir validatör setinin çalıştığı belirli bir süreyi ifade eder. Validatörler yalnızca oturumlar arasındaki geçişlerde kümeye girebilir veya çıkabilir.
 
-## Settlement
+## Mutabakat (Settlement)
 
-In the context of Avail and modular blockchains, settlement refers to the process by which modular layers agree on the correct execution outcome of transaction data. This includes any necessary dispute resolution processes. Since Avail operates as a modular base chain, it merely receives and stores raw transaction data without executing it. This data can encompass a wide range, from valid transactions to potential spam.
+Avail ve modüler blokzincirleri bağlamında mutabakat, modüler katmanların doğru yürütülmüş işlem sonuçları üzerinde anlaştığı süreci ifade eder. Bu, gerekli tüm uyuşmazlıkların çözüm süreçlerini içerir. Avail, modüler bir temel zincir olarak çalıştığından, ham işlem verilerini yürütmeden yalnızca alır ve depolar. Bu veriler, geçerli işlemlerden potansiyel spam'lere kadar geniş bir yelpazeyi kapsayabilir.
 
-The actual execution of these transactions and the subsequent validation of their outcomes occur in other layers or systems. Once these layers reach an agreement on the outcome, the results are "settled." For instance, in the case of a validium, transaction data is published to Avail, sequencers then execute these transactions, and finally, proofs of these executions are posted to Ethereum for settlement. Different modular constructions might employ varying mechanisms or platforms for settlement, but the core principle remains the same: determining and agreeing upon the correct outcome of transactions.
+Bu işlemlerin fiilen yürütülmesi ve sonuçlarının daha sonra doğrulanması diğer katmanlarda veya sistemlerde gerçekleşir. Bu katmanlar sonuç üzerinde bir anlaşmaya vardığında sonuçlar "karara bağlanır". Örneğin, bir validium söz konusu olduğunda, işlem verileri Avail'de yayınlanır, sıralayıcılar daha sonra bu işlemleri yürütür ve son olarak, bu yürütmelerin kanıtları mutabakat için Ethereum'a gönderilir. Farklı modüler yapılar mutabakat için farklı mekanizmalar veya platformlar kullanabilir, ancak temel prensip aynı kalır: işlemlerin doğru sonucunun belirlenmesi ve üzerinde mutabık kalınması.
 
-## Slashing
+## İlişiği Kesme (Slashing)
 
-Slashing is a penalty that is imposed on validators who misbehave. For example, a validator may be slashed if they equivocate, meaning that they sign two or more conflicting blocks. Slashing can be a severe penalty, as it can result in the loss of a portion of the validator's stake.
+Kesme, hatalı davranan validatörlere uygulanan bir cezadır. Örneğin, bir validatör ikircikli davranırsa, yani iki veya daha fazla çelişkili bloğu imzalarsa ağır ceza kesilebilir. Kesme cezası, validatörün hissesinin bir kısmını kaybetmesine neden olabileceğinden ciddi bir ceza olabilir.
 
 ## Sovereign Rollup
 
-A sovereign rollup is a type of blockchain that publishes its transactions to another blockchain, typically for ordering and data availability, but handles its own settlement. This means that sovereign rollups have their own canonical chain and validity rules, and they do not need to rely on a settlement layer to determine which transactions are valid.
+Sovereign rollup, işlemlerini genellikle emir verme ve veri kullanılabilirliği için başka bir blokzincirine yayınlayan, ancak kendi mutabakatını gerçekleştiren bir blokzinciri türüdür. Bu, sovereign rollup'ların kendi kanonik zincirlerine ve geçerlilik kurallarına sahip olduğu ve hangi işlemlerin geçerli olduğunu belirlemek için bir mutabakat katmanına güvenmeleri gerekmediği anlamına gelir.
 
-## Stash Account
+## Zula Hesabı (Stash Account)
 
-The stash account holds the tokens you wish to stake/bond. This account is like a cold storage account and is used for bonding and unbonding tokens, as well as for designating the controller account.
+Zula hesabı, stake etmek/bağlamak istediğiniz tokenları tutar. Bu hesap bir soğuk cüzdan hesabı gibidir ve tokenları bağlamak ve çözmek için ve ayrıca denetleyici hesabını belirlemek için kullanılır.
 
 ## Testnet
 
-A testnet is a simulated blockchain network that is used to test and debug blockchain applications before they are deployed on the mainnet. Testnets are typically open to the public, and anyone can participate in them.
+Testnet, blokzinciri uygulamalarını ana ağa dağıtılmadan önce test etmek ve hatalarını ayıklamak için kullanılan simüle edilmiş bir blokzinciri ağıdır. Test ağları genellikle halka açıktır ve herkes bunlara katılabilir.
 
 ## Validium
 
-Validiums are designed to store transaction data off the primary layer (L1), such as Ethereum. They can seamlessly leverage the benefits of Avail's scalable and specialized module. Rather than directing transaction data to a [<ins>DAC</ins>](#data-availability-committee-dac) or other alternatives, Validiums can commit this data to Avail.
+Validium’lar, Ethereum (L1) gibi birincil katmandaki işlem verilerini, zincir dışında depolamak için tasarlanmıştır. Avail'in ölçeklenebilir ve özel modülünün avantajlarından sorunsuz bir şekilde yararlanabilirler. İşlem verilerini bir DAC'ye [<ins>DAC</ins>](#data-availability-committee-dac) veya diğer alternatiflere yönlendirmek yerine, Validium'lar bu verileri Avail'e işleyebilir.
 
-A layer 2 solution, like a rollup, can evolve into a Validium by choosing off-chain data storage over the main chain. This distinction is subtle, as a Validium isn't strictly a "layer 2" in the traditional sense; it doesn't post data to L1, introducing different trust considerations. However, in many contexts, it's still categorized as a layer 2 solution. Fundamentally, a Validium can be described as a rollup combined with off-chain data availability, akin to Avail's approach.
+Rollup gibi bir katman 2 çözümü, ana zincir yerine zincir dışı veri depolamayı seçerek bir Validium'a dönüşebilir. Bir Validium geleneksel anlamda tam olarak bir "katman 2" olmadığı için bu ayrım inceliklidir; verileri L1'e göndermez ve farklı güven hususları ortaya çıkarır. Bununla birlikte, birçok bağlamda, yine de bir katman 2 çözümü olarak kategorize edilir. Temel olarak Validium, Avail'in yaklaşımına benzer şekilde zincir dışı veri kullanılabilirliği ile birleştirilmiş bir rollup olarak tanımlanabilir.
 
 ## Validator
 
-An Avail validator is a full node that is responsible for verifying transactions and adding them to the blockchain.
+Avail validatörü, işlemleri doğrulamaktan ve bunları blokzincirine eklemekten sorumlu olan full node’dur.
 
 ## Volition
 
-Volitions represent an advanced form of zero-knowledge rollups, offering developers the flexibility to decide the storage location for transaction data, be it on-chain or off-chain. This adaptability ensures that developers can optimize for both cost and DA based on the specific requirements of their application. In the context of Avail, volitions can leverage the platform's robust DA layer, ensuring that off-chain data remains easily accessible and verifiable, thereby enhancing the security and efficiency of decentralized applications.
+Volition'lar, zero-knowledge rollup'ların gelişmiş bir formunu temsil eder ve geliştiricilere işlem verileri için ister zincir üzerinde ister zincir dışında olsun depolama konumuna karar verme esnekliği sunar. Bu uyarlanabilirlik, geliştiricilerin uygulamalarının özel gereksinimlerine göre hem maliyet hem de DA açısından optimizasyon yapabilmelerini sağlar. Avail bağlamında volition'lar, platformun sağlam DA katmanından yararlanarak zincir dışı verilerin kolayca erişilebilir ve doğrulanabilir kalmasını sağlayabilir ve böylece merkezi olmayan uygulamaların güvenliğini ve verimliliğini artırabilir.
