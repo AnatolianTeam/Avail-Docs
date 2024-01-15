@@ -19,7 +19,7 @@ Avail belgeleri geliştirilme aşamasındayken, Sözlük temel kavramları detay
 
 :::
 
-## Uygulama Zinciri (App-Chain)
+## Uygulama Zinciri (App-Chain) 
 
 Uygulama zincirleri, geliştiricilerin, paylaşılan blokzincirinin kısıtlamaları olmaksızın, kullanım ihtiyaçlarına göre özelleştirerek uygulamalarını optimize etmelerine olanak tanır. Belirli uygulamalara hizmet eden bağımsız zincirler olarak işlev görerek gelişmiş performans ve ölçeklenebilirlik sağlarlar. Uygulama zincirleri ayrıca geliştiricilerin bir validatör setini yönetme ve sürdürme ihtiyacını ortadan kaldırarak geliştirme sürecini basitleştirir. Avail, farklı katman 2 veya 3 ölçeklendirme çözümlerini temel alabilen modüler uygulama zinciri mimarilerinin oluşturulmasına olanak tanır.
 
