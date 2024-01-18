@@ -15,96 +15,94 @@ image: https://docs.availproject.org/img/avail/AvailDocs.png
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-## Objective
+## Amaç
 
-Avail is rapidly advancing modular blockchains and we're calling on node operators to join the Clash of Nodes campaign. This campaign acts as an important proving ground for the Avail network, providing participants with an incentivized, real-time testnet environment. It's designed to rigorously test Avail's capabilities as the base layer poised to support a new generation of rollup-centric blockchain infrastructure.
+Avail, modüler blokzincirlerini hızla geliştiriyor ve node operatörlerini Clash of Nodes kampanyasına katılmaya çağırıyoruz. Bu kampanya, katılımcılara teşvik veren gerçek zamanlı bir test ağı ortamı sağlayarak Avail ağı için önemli bir kanıtlama alanı görevi görmektedir. Yeni nesil rollup merkezli blok zinciri altyapısını desteklemeye hazır temel katman olarak Avail'in yeteneklerini titizlikle test etmek için tasarlanmıştır.
 
-## Who is Clash of Nodes For?
+## Clash of Nodes Kimin İçin?
 
-A campaign for everyone.
+Herkes için bir kampanya.
 
-### Light Clients
+### Hafif İstemciler
 
-Join the Clash of Nodes by running a light client and take part in Avail's mission to build a scalable blockchain infrastructure. Avail's light client functionality is uniquely designed to empower anyone, anywhere to participate in the network.
+Hafif istemci çalıştırarak Clash of Nodes'a katılın ve Avail'in ölçeklenebilir bir blokzinciri altyapısı oluşturma misyonunda yer alın. Avail'in hafif istemci işlevi, herkesin, her yerde ağa katılmasını sağlamak için benzersiz bir şekilde tasarlanmıştır.
 
-### Validators
+### Validatörler
 
-The Clash of Nodes incentivized testnet is an opportunity for validators to engage with Avail's infrastructure in a simulated production environment. Participants will contribute to the network's resilience through a series of challenges, with the potential to earn rewards based on their performance and engagement.
+Clash of Nodes teşvikli test ağı, doğrulayıcıların Avail'in altyapısıyla simüle edilmiş bir üretim ortamında etkileşime girmeleri için bir fırsattır. Katılımcılar, performanslarına ve katılımlarına bağlı olarak ödül kazanma potansiyeli ile bir dizi zorlu görev aracılığıyla ağın dayanıklılığını artırmaya katkıda bulunacaklardır.
 
-## Key Campaign Concepts
+## Temel Kampanya Kavramları
 
-The following table serves as a quick reference to understand the various elements that make up the Clash of Nodes campaign.
+Aşağıdaki tablo, Clash of Nodes kampanyasını oluşturan çeşitli unsurları anlamak için hızlı bir referans görevi görür.
 
-If there are any unclear concepts about Avail, head over to the [<ins>glossary</ins>](/docs/glossary.md) for definitions and explanations.
+Avail ile ilgili net olmayan kavramlar varsa, tanımlar ve açıklamalar için sözlüğe [<ins>glossary</ins>](/docs/glossary.md) gidin.
 
-| Concept                  | Description                                                                                                                                                                                                              |
+| Kavram                  | Tanım                                                                                                                                                                                                              |
 | ------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| **Challenges**           | Tasks or objectives that participants complete to test and strengthen the network. Challenges are designed to assess performance, security, and reliability as they relate to the data availability guarantees of Avail. |
-| **Points**               | A scoring system that rewards participants for completing challenges. Points are tallied on a leaderboard, with potential rewards for top performers.                                                                    |
-| **Nominator Pools**      | Groups where participants collectively stake tokens to support a validator. This allows users to participate in network validation and earn rewards without running a full node.                                         |
-| **Rollapps**             | Decentralized applications that use Avail's data availability layer. They are key to testing the network's capacity for handling application data.                                                                       |
-| **DHT**                  | Distributed Hash Table, a system used by light clients for efficient data storage and retrieval, crucial for maintaining data availability and integrity.                                                                |
-| **Vector Functionality** | The network's capability to interact with other blockchains, enabling functionalities like cross-chain data verification and interoperability.                                                                           |
+| **Zorlu Görevler**           | Katılımcıların ağı test etmek ve güçlendirmek için tamamladıkları görevler veya hedefler. Zorlu görevler, Avail'in veri kullanılabilirliği garantileriyle ilgili olarak performans, güvenlik ve güvenilirliği değerlendirmek için tasarlanmıştır. |
+| **Puanlar**               | Katılımcıları zorlu görevleri tamamladıkları için ödüllendiren bir puanlama sistemi. Puanlar bir liderlik tablosunda toplanır ve en iyi performans gösterenler için potansiyel ödüller verilir.                                                                   |
+| **Aday Gösterenlerin Havuzları**      | Katılımcıların bir doğrulayıcıyı desteklemek için toplu olarak token yatırdığı gruplar. Bu, kullanıcıların tam bir node çalıştırmadan ağ doğrulamasına katılmalarına ve ödüller kazanmalarına olanak tanır.                                         |
+| **Rollapps**             | Avail'in veri kullanılabilirliği katmanını kullanan merkezi olmayan uygulamalar. Bunlar, ağın uygulama verilerini işleme kapasitesini test etmek için kilit öneme sahiptir.                                                                       |
+| **DHT**                  | Dağıtılmış Karma Tablo, hafif istemciler tarafından verimli veri depolama ve alma için kullanılan, veri kullanılabilirliğini ve bütünlüğünü korumak için çok önemli olan bir sistemdir.                                                                |
+| **Vektör İşlevselliği** | Ağın diğer blok zincirleriyle etkileşime girme kabiliyeti, zincirler arası veri doğrulama ve birlikte çalışabilirlik gibi işlevleri mümkün kılar.                                                                           |
 
-## Requirements to Participate
+## Katılım Şartları
 
-:::caution Ensure you agree to follow the associated T&Cs and campaign rules
+:::caution İlgili Hükümler, Koşullar ve Kampanya Kurallarına uymayı kabul ettiğinizden emin olun.
 
-Please find the associated Terms and Conditions **[<ins>here</ins>](/docs/clash-of-nodes/toc.md)**.
+Lütfen ilgili Hükümler ve Koşullara bakın. **[<ins>here</ins>](/docs/clash-of-nodes/toc.md)**.
 
-Please also make sure to read and adhere to the established rules and guidelines for the Clash of Nodes campaign,
-available **[<ins>here</ins>](/docs/clash-of-nodes/rules.md)**.
-This will ensure a fair and enjoyable experience for all participants.
-
+Lütfen Clash of Nodes kampanyası için belirlenmiş kuralları ve rehberleri okuduğunuzdan ve bunlara uyduğunuzdan emin olun. **[<ins>here</ins>](/docs/clash-of-nodes/rules.md)**.
+Bu, tüm katılımcılar için adil ve keyifli bir deneyim sağlayacaktır.
 :::
 
-If you're new to Avail, check out the [<ins>New User</ins>](/category/get-started/new-user-guide/) and [<ins>Quickstart</ins>](/build/quickstart/) guides.
+Avail'te yeniyseniz, Yeni Kullanıcı [<ins>New User</ins>](/category/get-started/new-user-guide/) ve Hızlı Başlangıç [<ins>Quickstart</ins>](/build/quickstart/) rehberlerine göz atın.
 
-### 1. Show Your Interest
+### 1. İlginizi Gösterin
 
-If you're ready to take part in this groundbreaking testnet and haven't yet signed up, now is the time to step forward.
+Bu çığır açan test ağına katılmaya hazırsanız ve henüz kaydolmadıysanız, şimdi bir adım öne çıkmanın tam zamanı.
 
-- If you're a validator looking to participate in the incentivized testnet, please express your interest by completing the
-  [<ins>Validator Interest Form</ins>](https://docs.google.com/forms/d/e/1FAIpQLScvgXjSUmwPpUxf1s-MR2C2o5V79TSoud1dLPKVgeLiLFuyGQ/viewform).
+- Teşvikli test ağına katılmak isteyen bir doğrulayıcı iseniz, lütfen Doğrulayıcı İlgi Formunu
+  [<ins>Validator Interest Form</ins>](https://docs.google.com/forms/d/e/1FAIpQLScvgXjSUmwPpUxf1s-MR2C2o5V79TSoud1dLPKVgeLiLFuyGQ/viewform) doldurarak ilginizi belirtin.
 
-- If you're interested in becoming a light client operator, let us know by signing up using the
-  [<ins>Light Client Operator Interest Form</ins>](https://docs.google.com/forms/d/e/1FAIpQLSeL6aXqz6vBbYEgD1cZKaQ4vwbN2o3Rxys-wKTuKySVR-oS8g/viewform).
+- Hafif istemci operatörü olmakla ilgileniyorsanız, Hafif İstemci Operatörü İlgi Formunu
+  [<ins>Light Client Operator Interest Form</ins>](https://docs.google.com/forms/d/e/1FAIpQLSeL6aXqz6vBbYEgD1cZKaQ4vwbN2o3Rxys-wKTuKySVR-oS8g/viewform) kullanarak kaydolarak bize bildirin.
 
-### 2. Setup Your Environment
+### 2. Kurulumunuzu Ayarlayın
 
-To ensure a stable and efficient operation of your node in the Clash of Nodes campaign, the following hardware specifications are recommended:
+Clash of Nodes kampanyasında node’unuzun istikrarlı ve verimli bir şekilde çalışmasını sağlamak için aşağıdaki donanım özellikleri önerilir:
 
-| Specification        | Minimum Requirements       | Recommended for Validators |
+| Şartname        | Minimum Şartlar       | Validatörlere Tavsiye Edilen Şartlar |
 | -------------------- | -------------------------- | -------------------------- |
-| **CPU**              | 2 cores                    | 4 cores or more            |
-| **RAM**              | 4 GB                       | 8 GB or more               |
-| **Disk Space**       | 20–40 GB                   | 40 GB SSD or more          |
-| **Operating System** | Ubuntu 20.04 LTS or higher | Ubuntu 20.04 LTS or higher |
+| **CPU**              | 2 çekirdekli               | 4 çekirdekli veya üstü     |
+| **RAM**              | 4 GB                       | 8 GB veya üstü             |
+| **Disk Alanı**       | 20–40 GB                   | 40 GB SSD veya üstü        |
+| **İşletim Sistemi**  | Ubuntu 20.04 LTS veya üstü | Ubuntu 20.04 LTS veya üstü |
 
-### 3. Deploy Your Node
+### 3. Node'unuzu Kurun
 
-For instructions on setting up and running nodes on the Avail network, please refer to the following guides:
+Avail ağında node'ların kurulması ve çalıştırılması ile ilgili talimatlar için lütfen aşağıdaki rehberlere bakın:
 
-| Node Type      | Guide Document                                                                  |
+| Node Çeşidi      | Rehber Dosyası                                                                  |
 | -------------- | ------------------------------------------------------------------------------- |
-| Light Client   | [<ins>How to Run a Light Client</ins>](/docs/operate-a-node/run-a-light-client/0010-light-client.md) |
-| Validator Node | [<ins>How to Become a Validator</ins>](/category/become-a-validator/)           |
+| Hafif İstemci   | [<ins>How to Run a Light Client</ins>](/docs/operate-a-node/run-a-light-client/0010-light-client.md) |
+| Validatör Node'u | [<ins>How to Become a Validator</ins>](/category/become-a-validator/)           |
 
-If you require more information on node types within the Avail network, please consult the
-[<ins>Node Types Comparison document</ins>](/docs/operate-a-node/node-types.md).
+Avail ağındaki node türleri hakkında daha fazla bilgiye ihtiyacınız varsa, lütfen Node Türleri Karşılaştırma belgesine
+[<ins>Node Types Comparison document</ins>](/docs/operate-a-node/node-types.md) bakın.
 
-## Ready to Participate?
+## Katılmaya Hazır?
 
-Head over to the [<ins>Challenges page</ins>](/docs/clash-of-nodes/challenges.md) to start participating.
+Katılmaya başlamak için Zorlu Görevler [<ins>Challenges page</ins>](/docs/clash-of-nodes/challenges.md) sayfasına gidin.
 
-Below is a list of essential resources to help you navigate the campaign.
+Aşağıda, kampanyada yolunuzu bulmanıza yardımcı olacak temel kaynakların bir listesi yer almaktadır.
 
 <!--add link to blog post -->
 
-| Resource                                                                            | Description                                                                                                     |
+| Kaynak                                                                            | Tanım                                                                                                     |
 | ----------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------- |
-| [<ins>Challenges List</ins>](/docs/clash-of-nodes/challenges.md#list-of-challenges) | Detailed information on active and upcoming challenges, including objectives, eligibility, and scoring details. |
-| [<ins>FAQs</ins>](/docs/clash-of-nodes/faqs.md)                                     | Answers to common technical and program-related questions about the Clash of Nodes campaign.                    |
-| [<ins>Clash of Nodes Leaderboard</ins>](http://leaderboard.availproject.org/)       | The leaderboard for the Clash of Nodes, showing node rankings and statistics.                                   |
-| [<ins>Clash of Nodes Website</ins>](http://clash.availproject.org/)                 | The main website for the Clash of Nodes with general information and updates.                                   |
-| [<ins>Discord Community</ins>](https://discord.com/invite/y6fHnxZQX8)               | Join the conversation and get support from the Avail team and community on Discord.                             |
+| Zorlu görevler listesi[<ins>Challenges List</ins>](/docs/clash-of-nodes/challenges.md#list-of-challenges) | Hedefler, uygunluk ve puanlama ayrıntıları dahil olmak üzere aktif ve yaklaşan zorlu görevler hakkında ayrıntılı bilgiler. |
+| Sık sorulan sorular [<ins>FAQs</ins>](/docs/clash-of-nodes/faqs.md)                                     | Clash of Nodes kampanyası hakkında teknik ve programla ilgili yaygın sorulara yanıtlar.                    |
+| Liderlik Sıralaması [<ins>Clash of Nodes Leaderboard</ins>](http://leaderboard.availproject.org/)       | Clash of Nodes için node sıralamalarını ve istatistiklerini gösteren liderlik tablosu.                                   |
+| Web Sitesi[<ins>Clash of Nodes Website</ins>](http://clash.availproject.org/)                 | Clash of Nodes için genel bilgiler ve güncellemeler içeren ana web sitesi.                                   |
+| Discord Topluluğu [<ins>Discord Community</ins>](https://discord.com/invite/y6fHnxZQX8)               | Discord'da sohbete katılın ve Avail ekibinden ve topluluğundan destek alın.                             |
