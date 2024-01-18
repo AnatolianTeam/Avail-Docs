@@ -1,9 +1,9 @@
 ---
 id: challenges
-title: Clash of Nodes Mücadelesi
-sidebar_label: Mücadele
+title: Clash of Nodes Zorlu Görevleri
+sidebar_label: zorlu görev
 sidebar_position: 2 
-description: 'Clash of Nodes kampanyasında mücadeleler.'
+description: 'Clash of Nodes kampanyasında zorlu görevler'
 keywords:
   - docs
   - avail
@@ -13,55 +13,54 @@ keywords:
 image: https://docs.availproject.org/img/avail/AvailDocs.png
 ---
 
-Bir dizi dinamik mücadelenin sizi beklediği Clash of Nodes teşvikli test ağıyla heyecan verici bir yolculuğa çıkın. Zorlu ağ testlerine katılın, puanlar için yarışın ve potansiyel ödüller için yarışın.
+Bir dizi dinamik zorlu görevin sizi beklediği Clash of Nodes teşvikli test ağıyla heyecan verici bir yolculuğa çıkın. Zorlu ağ testlerine katılın, puanlar için yarışın ve potansiyel ödüller için yarışın.
 
-## Before You Start
+## Başlamadan Önce
 
-**Please be aware that this document doesn't include the full spectrum of challenges within the campaign; additional challenges will be unveiled and highlighted as the campaign progresses.**
+**Bu belgenin kampanya kapsamındaki tüm zorlu görevleri içermediğini lütfen unutmayın; kampanya ilerledikçe ek zorlu görevler açıklanacak ve vurgulanacaktır.**
 
-:::info Selective Entry & Participation Notice
+:::info Seçmeli Giriş ve Katılım Bildirimi
 
-We're carefully rolling out the campaign with a select group to ensure quality and precision. If you've been invited, instructions are on their way. For our wider community, please know that while the initial spots are limited, this is just one of many opportunities we're excited to share with you. Your continued support is vital to us, and we're looking forward to involving more of you as we grow.
-
-:::
-
-:::caution Ensure you agree to follow the associated T&Cs and campaign rules
-
-Please find the associated Terms and Conditions **[<ins>here</ins>](/docs/clash-of-nodes/toc.md)**.
-
-Please also make sure to read and adhere to the established rules and guidelines for the Clash of Nodes campaign,
-available **[<ins>here</ins>](/docs/clash-of-nodes/rules.md)**.
-This will ensure a fair and enjoyable experience for all participants.
+Kalite ve hassasiyeti sağlayabilmek için kampanyayı seçkin bir grupla dikkatli bir şekilde yürütüyoruz. Eğer davet edildiyseniz, talimatlar iletilecektir. Geniş topluluğumuza yönelik başlangıç duyuruları sınırlı olsa da, lütfen bunun sizinle paylaşmaktan heyecan duyduğumuz birçok fırsattan sadece biri olduğunu bilin. Devam eden desteğiniz bizim için hayati önem taşıyor ve büyüdükçe sizleri daha fazla dahil etmeyi dört gözle bekliyoruz.
 
 :::
 
-## List of Challenges
+:::caution İlgili Hükümler, Koşullar ve Kampanya Kurallarına uymayı kabul ettiğinizden emin olunuz.
 
-:::caution Faucet under maintenance
+Lütfen ilgili Hükümler ve Koşullara bakınız. **[<ins>here</ins>](/docs/clash-of-nodes/toc.md)**.
 
-The Goldberg Testnet Faucet is presently undergoing maintenance.
-As a result, some challenges are temporarily on hold. We appreciate your patience.
+Lütfen Clash of Nodes kampanyası için belirlenmiş kuralları ve rehberleri okuduğunuzdan ve bunlara uyduğunuzdan emin olun. **[<ins>here</ins>](/docs/clash-of-nodes/rules.md)**.
+Bu, tüm katılımcılar için adil ve keyifli bir deneyim sağlayacaktır.
 
 :::
 
-Discover the challenges that are currently active and prepare for the other ones:
+## Zorlu Görev Listesi
 
-> ### Status Legend
+:::caution Musluk bakımda
 
-- 🟢 = Active
-- 🟡 = Upcoming
-- ⏸️ = Paused
-- ✔️ = Completed
+Goldberg Testnet Musluğu şu anda bakımdan geçmektedir.
+Sonuç olarak, bazı zorlu görevler geçici olarak askıya alınmıştır. Sabrınız için teşekkür ederiz.
 
-| Challenge Name                                                         | Category        | Description                                                                                                          | Who Can Participate | Scoring Metrics                                                                                  | Status |
+:::
+
+Şu anda aktif olan zorlu görevleri keşfedin ve diğerlerine hazırlanın:
+
+> ### Durum Göstergesi
+
+- 🟢 = Aktif
+- 🟡 = Yaklaşan
+- ⏸️ = Duraklamış
+- ✔️ = Tamamlanmış
+
+| Zorlu Görev                                                         | Sınıf        | Tanım                                                                                                          | Kimler Katılabilir | Puanlama Metrikleri                                                                                  | Durum |
 | ---------------------------------------------------------------------- | --------------- | -------------------------------------------------------------------------------------------------------------------- | ------------------- | ------------------------------------------------------------------------------------------------ | :----: |
-| **[<ins>Finding Yourself</ins>](/about/identity/)**                    | Basics          | Establish your presence by registering and confirming your identity on the network.                                  | Anyone              | Identities added and verified                                                                    |   ✔️   |
-| **[<ins>Max Balance Transfer Points</ins>](/about/balance-transfers)** | Basics          | Demonstrate your prowess by executing as many transfers as possible across the network.                              | Anyone              | \*\*Showcase your consistent participation by executing one transfer per day across the network. |   ✔️   |
-| **[<ins>Gladiator's Entry</ins>](/category/become-a-validator/)**      | Basics          | Enter the fray by setting up as a validator. Your mission: author as many blocks as you can, outlasting your rivals. | Validators          | Number of blocks authored                                                                        |   🟢   |
-| **[<ins>Noble Warrior</ins>](/category/become-a-validator/)**          | Basics          | Show your valor by adhering to the noble principles of validation.                                                   | Validators          | Negative points for: times offline, times slashed                                                |   🟢   |
-| **Attacking the Treasury**                                             | Attacks         | Discover and exploit potential vulnerabilities in the treasury or burn mechanism.                                    | Anyone              | Number of successes and failures reports                                                         |   🟢   |
-| **Magic Nomination Pools**                                             | Staking/Rewards | Are you able to create nomination pools and nominate validators?                                                     | Pool Creators       | Size of pool members                                                                             |   🟢   |
-| **To The Stake**                                                       | Staking/Rewards | Aim to amplify your validator backing by securing a greater number of nominations during the testnet marathon.       | Validators          | Total amount staked                                                                              |   🟡   |
-| **More Coming Soon!**                                                  |                 | Stay tuned for more challenges!                                                                                      |                     |                                                                                                  |        |
+| **[<ins>Finding Yourself</ins>](/about/identity/)**                    | Temel          | Kimlik bilgilerinizi kaydedip onaylayarak ağdaki yerinizi tanımlayın.                                  | Herkes              | Kimlikler eklendi ve doğrulandı                                                                    |   ✔️   |
+| **[<ins>Max Balance Transfer Points</ins>](/about/balance-transfers)** | Temel          | Ağ üzerinde mümkün olduğunca transfer gerçekleştirerek hünerinizi gösterin.                              | Herkes              | \*\*Ağ üzerinden günde bir transfer gerçekleştirerek istikrarlı katılımınızı sergileyin. |   ✔️   |
+| **[<ins>Gladiator's Entry</ins>](/category/become-a-validator/)**      | Temel          | Bir doğrulayıcı olarak mücadeleye katılın. Göreviniz: rakiplerinizi geride bırakarak olabildiğince çok blok yazmak. | Validatörler          | Yazılmış blok sayısı                                                                       |   🟢   |
+| **[<ins>Noble Warrior</ins>](/category/become-a-validator/)**          | Temel          | Doğrulamanın asil ilkelerine bağlı kalarak cesaretinizi gösterin.                                                   | Validatörler          | Negatif puanlar: çevrimdışı süreler, kesilen süreler                                                |   🟢   |
+| **Attacking the Treasury**                                             | Saldırı         | Hazine veya yakma mekanizmasındaki potansiyel güvenlik açıklarını keşfedin ve kullanın.                                    | Herkes              | Başarı ve hata raporlarının sayısı                                                         |   🟢   |
+| **Magic Nomination Pools**                                             | Stake etme/Ödüller | Aday gösterme havuzları oluşturabiliyor ve doğrulayıcıları aday gösterebiliyor musunuz?                                                     | Havuz Oluşturanlar       | Havuz üyelerinin büyüklüğü                                                                             |   🟢   |
+| **To The Stake**                                                       | Stake etme/Ödüller | Testnet maratonu sırasında daha fazla sayıda aday gösterilmesini sağlayarak validatör desteğinizi artırmayı hedefleyin.       | Validatörler          | Toplam stake edilmiş miktar                                                                              |   🟡   |
+| **Daha Fazlası Yakında!**                                                  |                 | Daha fazla zorlu görev için bizi takip etmeye devam edin!                                                                                      |                     |                                                                                                  |        |
 
-> \*\* **Note:** More than one transfer per day does not contribute to a higher score or greater impact in this challenge. The challenge is time bound and the focus is on maintaining consistency with one transfer each day.
+> \*\* **Note:** Günde birden fazla transfer, bu yarışmada daha yüksek bir skor veya daha büyük bir etkiye katkıda bulunmaz. Zorlu görevler zamana bağlıdır ve odak noktası her gün bir transfer ile istikrarı korumaktır.
