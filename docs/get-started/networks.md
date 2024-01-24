@@ -26,35 +26,26 @@ image: https://docs.availproject.org/img/avail/AvailDocs.png
 | **Node Version**         | [<ins>v1.8.0.4</ins>](https://github.com/availproject/avail/releases/tag/v1.8.0.4)   | [<ins>v1.7.2</ins>](https://github.com/availproject/avail/releases/tag/v1.7.2)       | [<ins>v1.5.0-303f39d</ins>](https://github.com/availproject/avail/releases/tag/v1.5.0-303f39d) |
 | **Light Client Version** | [<ins>v1.7.4</ins>](https://github.com/availproject/avail-light/releases/tag/v1.7.4) | [<ins>v1.7.4</ins>](https://github.com/availproject/avail-light/releases/tag/v1.7.4) | [<ins>1.3.1</ins>](https://github.com/availproject/avail-light/releases/tag/v1.3.1)            |
 
-## Pioneering Blockchain Modularity
+## Blokzinciri Modülerliğine Öncülük Etmek
 
-**The Goldberg Testnet is the latest test network of the Avail Project.**
+**Goldberg Testnet, Avail Projesi'nin en son test ağıdır.**
 
-### Phase One: Laying the Groundwork
+### Birinci Evre: Temelin Atılması
 
-The inaugural phase of Avail's testnet served as a sandbox for fundamental
-operations, including the execution of on-chain functions and the initiation
-of protocol governance. This phase was instrumental in setting the stage for
-more advanced testing scenarios.
+Avail'in test ağının açılış evresi, zincir içi işlevlerin yürütülmesi ve protocol yönetişiminin başlatılması da dahil olmak üzere temel işlemler için bir sanal alan görevi gördü. Bu evre, daha gelişmiş test senaryolarına zemin hazırlanmasında etkili oldu.
 
-### Phase Two: Expanding the Testing Ecosystem
+### İkinci Evre: Test Ekosisteminin Genişletilmesi
 
-The second phase aims to provide a robust testing environment designed to foster
-increased participation from validators. Validators are crucial network participants
-who leverage their computing resources to validate transactions and fortify network
-security, often in exchange for token-based rewards.
+İkinci evre, validatörlerin katılımının artmasını teşvik etmek için tasarlanmış sağlam bir test ortamı sağlamayı amaçlamaktadır. Validatörler, işlemleri doğrulamak ve ağ güvenliğini güçlendirmek için genellikle token tabanlı ödüller karşılığında bilgi işlem kaynaklarından yararlanan önemli ağ katılımcılarıdır.
 
-#### User Participation on the Testnet
+#### Testnet'e Kullanıcı Katılımı
 
-The Kate testnet offers a multitude of avenues for user engagement:
+Kate testneti, kullanıcı katılımı için çok sayıda yol sunar:
 
-- **Token Acquisition**: Users can obtain AVL testnet tokens to explore staking and
-  nomination functionalities.
-- **Blockchain Development**: Users have the freedom to develop modular blockchain applications
-  or chains that integrate with Avail's data layer.
-- **Network Roles**: Users can opt to join the testnet as either validators or light clients,
-  facilitating data verification processes.
+- **Token Edinme**: Kullanıcılar, stake etme ve aday gösterme işlevlerini keşfetmek için AVL test ağı tokenlerini alabilirler.
+- **Blokzinciri Geliştirme**: Kullanıcılar, Avail'in veri katmanı ile entegre olan modüler blokzinciri uygulamaları veya zincirleri geliştirme özgürlüğüne sahiptir.
+- **Ağ Rolleri**: Kullanıcılar test ağına validatör veya hafif istemci olarak katılmayı tercih ederek veri doğrulama süreçlerini kolaylaştırabilir.
 
-### Phase Three: Incentivized Testnet
+### Üçüncü Evre: Teşvikli Test Ağı
 
-Avail is now ushering in the [<ins>Clash of Nodes</ins>](/category/clash-of-nodes/) campaign using the Goldberg testnet. This campaign is a call to action for node operators to participate in an incentivized, real-time testnet environment. It's a critical testbed for Avail's infrastructure, designed to rigorously evaluate its capacity as a foundational layer for the next wave of rollup-centric blockchain ecosystems.
+Avail şimdi Goldberg test ağını kullanarak [<ins>Clash of Nodes</ins>](/category/clash-of-nodes/) kampanyasını başlatıyor. Bu kampanya, node operatörlerinin teşvikli, gerçek zamanlı bir test ağı ortamına katılmaları için bir eylem çağrısıdır. Bu, Avail'in altyapısı için kritik bir test ortamıdır ve bir sonraki rollup merkezli blokzinciri ekosistemleri dalgası için temel bir katman olarak kapasitesini titizlikle değerlendirmek üzere tasarlanmıştır.
