@@ -1,6 +1,6 @@
 ---
 id: faucet
-title: Testnet Faucet nasıl kullanılır
+title: Testnet Faucet Nasıl Kullanılır
 sidebar_label: Testnet Tokeni Alın
 sidebar_position: 3
 description: Avail Testnet Faucet kullanımı
@@ -14,18 +14,12 @@ keywords:
 image: https://docs.availproject.org/img/avail/AvailDocs.png
 ---
 
-You can use the Discord Faucet to get Avail (AVL) tokens on the Goldberg
-testnet.
+Goldberg test ağında Avail (AVL) tokenleri almak için Discord Faucet'ı kullanabilirsiniz.
 
-1. Make sure you have already [Created an account](/docs/get-started/Yeni Kullanıcı Rehberi/accounts.md) to receive funds.
-2. Join the [Avail Discord](https://discord.gg/y6fHnxZQX8) and
-   complete the verification step.
-3. Navigate to the `#goldberg-faucet` channel and issue the following
-   command: `/deposit <your address> `.
+1. Fon almak için hesap oluşturduğunuzdan [Created an account](/docs/get-started/Yeni Kullanıcı Rehberi/accounts.md) emin olun.
+2. Avail Discord'a katılın [Avail Discord](https://discord.gg/y6fHnxZQX8) ve doğrulama adımını tamamlayın.
+3. `#goldberg-faucet` kanalına gidin and şu komutu verin: `/deposit <your address>`.
+     
+Durum `Complete` olarak değiştiğinde adresinize 5 AVL tokeni yatırılacaktır. AVL'yi 3 saatte bir talep edebilirsiniz.
 
-Your address will be deposited 5 AVL token once the status changes to
-`Complete`. You may request AVL every 3 hours.
-
-> The verification step is required, and you can only use the command
-once every few minutes. The faucet is not meant for obtaining large
-amounts of AVL (e.g. for validator bonding).
+> Doğrulama adımı gereklidir ve komutu yalnızca birkaç dakikada bir kullanabilirsiniz. Musluk, büyük miktarlarda AVL elde etmek için tasarlanmamıştır (örn. validatöre fon bağlama için).
