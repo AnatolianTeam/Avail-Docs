@@ -1,6 +1,6 @@
 ---
 id: explorer
-title: Goldberg Testnet Explorer nasıl kullanılır
+title: Goldberg Testnet Explorer Nasıl Kullanılır
 sidebar_label: Explorer Kullanımı
 sidebar_position: 2
 description: Avail ağıyla etkileşimde bulunmak için Avail Explorer'ın kullanımına ilişkin kapsamlı bir kılavuz.
@@ -14,51 +14,50 @@ image: https://docs.availproject.org/img/avail/AvailDocs.png
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-## Introduction
+## Giriş
 
-The [<ins>Goldberg Testnet Explorer</ins>](https://goldberg.avail.tools/) serves as a powerful interface for interacting with the Avail network. Whether you're a developer, a validator, or an end-user, the explorer provides you with the tools to inspect network activities, manage accounts, and participate in governance. This guide will walk you through its key features.
+[<ins>Goldberg Testnet Explorer</ins>](https://goldberg.avail.tools/) Avail ağı ile etkileşim kurmak için güçlü bir arayüz görevi görür. İster geliştirici, ister validatör veya son kullanıcı olun, Explorer size ağ etkinliklerini incelemek, hesapları yönetmek ve yönetişime katılmak için araçlar sağlar. Bu rehber, temel özellikleri hakkında size yol gösterecektir.
 
-### Quick Navigation
+### Hızlı Navigasyon
 
 - [Inspect Network Data](#inspect-network-data)
 - [Manage Accounts](#manage-accounts)
 - [Participate in Governance](#participate-in-governance)
 - [Advanced Features](#advanced-features)
 
-## Inspect Network Data
+## Ağ Verilerini İnceleyin
 
-### Recent Blocks Overview
+### Son Bloklara Genel Bakış
 
-The default page of the explorer displays the most recently produced blocks, allowing you to monitor network activity in real-time.
+Explorer'ın varsayılan sayfası en son üretilen blokları görüntüleyerek ağ etkinliğini gerçek zamanlı olarak izlemenize olanak tanır.
 
 ![Avail Explorer](/img/avail/explorer.png)
 
-### Block Details
+### Blok Ayrıntıları
 
-Clicking on a block number (or block "height") will open a detailed view of that block, including transactions, validators, and more.
+Bir blok numarasına (veya blok "yüksekliğine") tıklamak, o bloğun işlemler, validatörler ve daha fazlasını içeren ayrıntılı bir görünümünü açacaktır.
 
 ![Avail Explorer Block Detail](/img/avail/explorer-block-detail.png)
 
-## Manage Accounts
+## Hesabı Yönetin
 
-The explorer allows you to create, manage, and recover accounts. You can also initiate transactions, stake tokens, and more. To learn how to create an account, check out the [<ins>Create and Manage Accounts guide</ins>](/docs/get-started/Yeni Kullanıcı Rehberi/explorer.md).
+Explorer, hesap oluşturmanıza, yönetmenize ve kurtarmanıza olanak tanır. Ayrıca işlemleri başlatabilir, tokenleri stake edebilir ve daha fazlasını yapabilirsiniz. Nasıl hesap oluşturacağınızı öğrenmek için [<ins>Create and Manage Accounts guide</ins>](/docs/get-started/Yeni Kullanıcı Rehberi/explorer.md) bölümüne göz atın.
 
-## Participate in Governance
+## Yönetişime Katılın
 
-From proposals to referenda, the explorer provides you with the tools to actively participate in network governance.
+Tekliflerden oylamalara kadar, Explorer size ağ yönetimine aktif olarak katılmanız için gerekli araçları sağlar.
 
-## Advanced Features
+## Gelişmiş Özellikler
 
-### Manual Transactions and RPC Calls
+### Manuel İşlemler ve RPC Çağrıları
 
-For developers and advanced users, the explorer offers features like manually submitting [transactions](https://docs.substrate.io/v3/concepts/extrinsics/), making RPC calls, and other debugging tasks.
+Geliştiriciler ve ileri düzey kullanıcılar için Explorer (https://docs.substrate.io/), işlemleri manuel olarak gönderme, RPC çağrıları yapma ve hata ayıklama görevleri gibi özellikler sunar.
 
-:::info Confidence
+:::info Güven Puanına Dikkat
 
-The explorer hosts a light client that performs Data Availability Sampling (DAS) to verify data availability. The very latest blocks may not display a confidence score until this process is complete.
-
+Explorer, veri kullanılabilirliğini doğrulamak için Veri Kullanılabilirliği Örneklemesi (DAS) gerçekleştiren hafif istemci barındırır. Bu işlem tamamlanana kadar en yeni bloklar güven puanı göstermeyebilir.
 :::
 
-## Conclusion
+## Sonuç
 
-The Avail Explorer is a versatile tool for anyone involved in the Avail network. Whether you're inspecting blocks, managing accounts, or participating in governance, the explorer offers a comprehensive set of features to meet your needs.
+Avail Explorer, Avail ağında yer alan herkes için çok yönlü bir araçtır. İster blokları inceliyor, ister hesapları yönetiyor, ister yönetişime katılıyor olun, Explorer ihtiyaçlarınızı karşılayacak kapsamlı bir dizi özellik sunar.
