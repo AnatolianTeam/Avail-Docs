@@ -1,6 +1,6 @@
 ---
 id: accounts
-title: Bir Avail hesabı nasıl oluşturulur ve yönetilir
+title: Avail Hesabı Nasıl Oluşturulur ve Yönetilir
 sidebar_label: Hesap Oluşturma
 sidebar_position: 1
 description: Avail hesabı oluşturma ve yönetme konusunda kapsamlı kılavuz.
@@ -14,68 +14,68 @@ image: https://docs.availproject.org/img/avail/AvailDocs.png
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-## Introduction
+## Giriş
 
-This guide will walk you through the process of creating and managing an Avail account, while also providing insights into the account specifications and formats.
+Bu rehber, Avail hesabı oluşturma ve yönetme sürecinde size yol gösterecek ve aynı zamanda hesap özellikleri ve formatları hakkında bilgi verecektir.
 
 **[<ins>Skip to Creating an Account on the Goldberg Testnet</ins>](#creating-an-account-on-the-goldberg-testnet).**
 
-### Address Specifications & Format
+### Adres Özellikleri ve Formatı
 
-Built on the Substrate framework, Avail leverages its robust and flexible account system to provide users with a secure and efficient way to manage their digital assets and identity.
+Substrate çerçevesini temel alan Avail, kullanıcılara dijital varlıklarını ve kimliklerini yönetmek için güvenli ve etkili bir yol sağlamak amacıyla sağlam ve esnek hesap sisteminden yararlanır.
 
-Avail addresses are encoded in the [<ins>SS58 format</ins>](https://docs.substrate.io/reference/address-formats/), an enhanced version of [<ins>base-58 encoding</ins>](https://en.wikipedia.org/wiki/Binary-to-text_encoding). This format offers several advantages, such as shorter and more identifiable addresses and network-specific prefixes. For a detailed technical explainer, refer to the [<ins>Substrate documentation on Accounts, Addresses, and Keys</ins>](https://docs.substrate.io/learn/accounts-addresses-keys/).
+Avail adresleri, [<ins>base-58 encoding</ins>](https://en.wikipedia.org/wiki/Binary-to-text_encoding) kodlamasının geliştirilmiş bir versiyonu olan [<ins>SS58 format</ins>](https://docs.substrate.io/reference/address-formats/) formatında kodlanır. Bu format, daha kısa ve daha tanımlanabilir adresler ve ağa özgü ön ekler gibi çeşitli avantajlar sunar. Ayrıntılı bir teknik açıklama için Hesaplar, Adresler ve Anahtarlar hakkındaki Substrate belgelerine (https://docs.substrate.io/learn/accounts-addresses-keys) bakın.
 
-### Avail JS Apps: Your Interface to Avail
+### Avail JS Uygulamaları: Avail’deki Arayüzünüz
 
-[<ins>Avail JS Apps</ins>](https://goldberg.avail.tools/#/explorer), a fork of [<ins>Polkadot JS Apps</ins>](https://polkadot.js.org/apps/#/explorer), serves as your primary interface for the Avail network. Currently, its focus is solely on the Goldberg testnet, and as such, it is also referred to as the **Goldberg Testnet Explorer**. The scope of Avail JS Apps will expand as Avail matures into a production-ready network.
+[<ins>Polkadot JS Apps</ins>](https://polkadot.js.org/apps/#/explorer)'in çatallanmış bir kolu olan [<ins>Avail JS Apps</ins>](https://goldberg.avail.tools/#/explorer), Avail ağı için birincil arayüzünüz olarak hizmet eder. Şu anda odak noktası yalnızca Goldberg test ağıdır ve bu nedenle Goldberg Testnet Explorer olarak da anılmaktadır. Avail JS Uygulamalarının kapsamı, Avail üretime hazır bir ağa dönüştükçe genişleyecektir.
 
-Avail JS aims to offer functionalities similar to those found in the [<ins>Polkadot-JS UI guide</ins>](https://wiki.polkadot.network/docs/polkadotjs-ui), including but not limited to:
+Avail JS, [<ins>Polkadot-JS UI guide</ins>](https://wiki.polkadot.network/docs/polkadotjs-ui) rehberinde bulunanlara benzer işlevler sunmayı amaçlamaktadır; bunlara aşağıdakiler dahildir ancak bunlarla sınırlı değildir:
 
-- **Accounts**: Create, manage, and recover accounts.
-- **Staking**: Engage in network staking and manage validators.
-- **Explorer**: Browse blockchain data, view block details, and monitor network activity.
+- **Hesaplar**: Hesapları oluşturun, yönetin ve kurtarın. 
+- **Stake etme**: Ağda stake edin ve validatörleri yönetin. 
+- **Explorer**: Blokzinciri verilerine göz atın, blok ayrıntılarını görüntüleyin ve ağ etkinliğini izleyin.
+  
+### Tohum Kelimeler
 
-### Seed Phrases
+Bir hesap oluşturmadan önce tohum kelimeleri [<ins>seed phrases</ins>](https://en.wikipedia.org/wiki/Cryptocurrency_wallet) anlamak önemlidir. Hesap oluşturma işlemi sırasında, hesabınızı kurtarmak için kullanılabilecek bir dizi kelime alacaksınız.
 
-Before creating an account, it's essential to understand [<ins>seed phrases</ins>](https://en.wikipedia.org/wiki/Cryptocurrency_wallet). During the account creation process, you'll receive a seed phrase—a series of words that can be used to recover your account.
+> Tohum Kelimelerinin Güvenliği
+ASLA tohum ifadenizi kimseyle paylaşmayın ve onu güvenli ve çevrimdışı bir konumda saklayın. Tohum kelimelere erişimi olan herkes hesabınızın kontrolünü ele geçirebilir.
 
-> Seed Phrase Security
-NEVER share your seed phrase with anyone and keep it in a secure and offline location. Anyone with access to your seed phrase can gain control of your account.
+## Goldberg Testnet'te Hesap Oluşturma
 
-## Creating an Account on the Goldberg Testnet
+### 1. Explorer'u açın
 
-### 1. Open the Explorer
+[Goldberg Avail Explorer](https://goldberg.avail.tools/)'a gidin.
 
-Navigate to the [Goldberg Avail Explorer](https://goldberg.avail.tools/).
+### 2. Accounts'a Gidin
 
-### 2. Go to Accounts
-
-Once on the explorer, go to `Accounts -> Accounts` in the navigation bar.
+Explorer’a girdikten sonra gezinme çubuğunda `Accounts -> Accounts`'a gidin.
 <img src={useBaseUrl("img/avail/account.png")} width="100%" height="100%" />
 
-### 3. Generate a New Account
+### 3. Yeni Hesap Oluşturun
 
-Click on the `+Account` button on the right-hand side to initiate the account creation process.
+Hesap oluşturma sürecini başlatmak için sağ taraftaki`+Account` düğmesine tıklayın.
 <img src={useBaseUrl("img/avail/add-account.png")} width="100%" height="100%" />
 
-### 4. Follow the Wizard
+### 4. Sihirbazı Takip Edin
 
-Follow the on-screen instructions to complete the account creation process. Make sure to securely store your seed phrase for future reference.
+Hesap oluşturma işlemini tamamlamak için ekrandaki talimatları izleyin. İleride başvurmak üzere tohum kelimelerinizi güvenli bir şekilde sakladığınızdan emin olun.
 
-### 5. Download the JSON File
+### 5. JSON Dosyasını İndirin
 
-Upon completion, a JSON file containing your account information will be downloaded to your file system. You may be prompted to grant browser permissions for the download.
+İşlemler tamamlandığında, hesap bilgilerinizi içeren bir JSON dosyası dosya sisteminize indirilecektir. İndirme için tarayıcı izinleri vermeniz istenebilir.
 
-#### What is the JSON File?
+#### JSON Dosyası Nedir?
 
-The JSON file serves as a backup for your account and contains all the necessary information to recover it. It is encrypted with a password that you set during the account creation process.
+JSON dosyası, hesabınızın yedeği görevini görür ve onu kurtarmak için gerekli tüm bilgileri içerir. Hesap oluşturma işlemi sırasında belirlediğiniz bir şifre ile şifrelenir.
 
-> Backup and Recovery
-Always keep your JSON file in a secure and offline location. Losing this file and your password could result in the loss of your assets.
+> Yedekleme ve Kurtarma
+JSON dosyanızı her zaman güvenli ve çevrimdışı bir konumda saklayın. Bu dosyayı ve şifrenizi kaybetmeniz varlıklarınızın kaybına neden olabilir.
 
-## Next Steps
+## Sonraki Adımlar
 
-Congratulations on successfully creating and managing your Avail account! Remember to always safeguard your account details, JSON file, and seed phrase to ensure the security of your assets.
+Avail hesabınızı başarıyla oluşturduğunuz ve yönettiğiniz için tebrikler! Varlıklarınızın güvenliğini sağlamak için her zaman hesap ayrıntılarınızı, JSON dosyanızı ve tohum kelimelerinizi korumayı unutmayın.
 
-Ready to explore further? Navigate to the next guide to learn [<ins>how to use the Goldberg Testnet Explorer</ins>](/docs/get-started/new-user-guide/explorer.md) and get hands-on experience with the network.
+Daha fazlasını keşfetmeye hazır mısınız? Goldberg Testnet Explorer'ın nasıl kullanılacağını öğrenmek ve ağ konusunda uygulamalı deneyim elde etmek için bir sonraki rehbere [<ins>how to use the Goldberg Testnet Explorer</ins>](/docs/get-started/new-user-guide/explorer.md) gidin.
