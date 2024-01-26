@@ -20,8 +20,6 @@ Bu rehber, Goldberg test ağında zincir üstü kimlik oluşturma sürecinde siz
 
 Kişisel bilgilerin zincir üzerinde saklanması için kullanıcıların belirli miktarda parayı fon olarak kilitlemeleri gerekiyor. Bu teminat, kimlik tespitinin ardından iade edilir.
 
-Retrieve the necessary bond amounts by querying the [<ins>Chain state constants</ins>](https://goldberg.avail.tools/#/chainstate) on the [<ins>Goldberg Explorer</ins>](/docs/get-started/new-user-guide/explorer.md).
-
 Goldberg Explorer [<ins>Goldberg Explorer</ins>](/docs/get-started/Yeni Kullanıcı Rehberi/explorer.md) üzerinde [<ins>Chain state constants</ins>](https://goldberg.avail.tools/#/chainstate) sorgulayarak gerekli teminat miktarlarını alın.
 
 ### Zincir Durumu Sabitlerine Erişim
