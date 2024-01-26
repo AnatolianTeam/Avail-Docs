@@ -31,13 +31,13 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 Explorer'ın varsayılan sayfası en son üretilen blokları görüntüleyerek ağ etkinliğini gerçek zamanlı olarak izlemenize olanak tanır.
 
-![Avail Explorer](/img/avail/explorer.png)
+![Avail Explorer](../../img/avail/explorer.png)
 
 ### Blok Ayrıntıları
 
 Bir blok numarasına (veya blok "yüksekliğine") tıklamak, o bloğun işlemler, validatörler ve daha fazlasını içeren ayrıntılı bir görünümünü açacaktır.
 
-![Avail Explorer Block Detail](/img/avail/explorer-block-detail.png)
+![Avail Explorer Block Detail](../../img/avail/explorer-block-detail.png)
 
 ## Hesabı Yönetin
 
