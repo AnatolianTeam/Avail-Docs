@@ -12,32 +12,34 @@ keywords:
 image: https://docs.availproject.org/img/avail/AvailDocs.png
 ---
 
-## Introduction
+## Giriş
 
-This guide will walk you through the process of setting an on-chain identity on the Goldberg testnet.
+Bu rehber, Goldberg test ağında zincir üstü kimlik oluşturma sürecinde size yol gösterecektir.
 
-## Reserve Funds for Identity Bonding
+## Kimlik Bağlama Teminatı
 
-To store personal information on-chain, users are required to lock a specific amount of funds as a bond. This bond is refundable upon the clearance of the identity.
+Kişisel bilgilerin zincir üzerinde saklanması için kullanıcıların belirli miktarda parayı fon olarak kilitlemeleri gerekiyor. Bu teminat, kimlik tespitinin ardından iade edilir.
 
 Retrieve the necessary bond amounts by querying the [<ins>Chain state constants</ins>](https://goldberg.avail.tools/#/chainstate) on the [<ins>Goldberg Explorer</ins>](/docs/get-started/Yeni Kullanıcı Rehberi/explorer.md).
 
-### Accessing Chain State Constants
+Goldberg Explorer [<ins>Goldberg Explorer</ins>](/docs/get-started/Yeni Kullanıcı Rehberi/explorer.md) üzerinde [<ins>Chain state constants</ins>](https://goldberg.avail.tools/#/chainstate) sorgulayarak gerekli teminat miktarlarını alın.
 
-Determine the bond amounts via the chain's interface by doing the following:
+### Zincir Durumu Sabitlerine Erişim
 
-1. Navigate to the "Developer" menu on the navbar and select "Chain state."
-2. Under the "Constants" tab, choose `identity` from the "selected constant query" menu. The `basicDeposit: u128` parameter will be the default.
-3. To add constants to the view, click the "plus" ("+") icon.
+Aşağıdakileri yaparak zincirin arayüzü aracılığıyla fon miktarlarını belirleyin:
 
-Each information field is limited to 32 bytes. Use a [<ins>UTF8 to bytes converter</ins>](https://onlinetools.com/utf8/convert-utf8-to-bytes) when manually entering data through the [<ins>Extrinsics UI</ins>](https://goldberg.avail.tools/#/extrinsics).
+1. Gezinti çubuğundaki "Developer" menüsüne gidin ve "Chain state"i seçin.
+2. "Constants" sekmesi altında, "selected constant query" menüsünden `identity` seçin. `basicDeposit: u128` parametresi varsayılan olacaktır.
+3. Görünüme sabitler eklemek için "artı" ("+") simgesine tıklayın.
 
-## Set Your On-Chain Identity
+Her bilgi alanı 32 byte ile sınırlıdır. [<ins>UTF8 to bytes converter</ins>](https://onlinetools.com/utf8/convert-utf8-to-bytes) kullanıcı arayüzü aracılığıyla verileri manuel olarak girerken [<ins>Extrinsics UI</ins>](https://goldberg.avail.tools/#/extrinsics)'den bayta dönüştürücü kullanın.
 
-Add personal details such as your legal name, display name, and website through the user interface:
+## Zincir Üstü Kimliğinizi Ayarlayın
 
-1. Click the three vertical dots next to your account and select "Set on-chain identity."
-2. In the popup, toggle and fill in the desired fields.
-3. Confirm by clicking "Set Identity" and submit the transaction to finalize your on-chain identity.
-4. Confirm your details and click "Set Identity" to proceed.
-5. Sign the transaction and submit it to complete the identity setting process.
+Kullanıcı arayüzü üzerinden yasal adınız, görünen adınız ve web siteniz gibi kişisel bilgilerinizi ekleyin:
+
+1. Hesabınızın yanındaki üç dikey noktaya tıklayın ve "Set on-chain identity"i seçin.
+2. Açılır pencerede istediğiniz alanları değiştirin ve doldurun.
+3. "Set Identity"e tıklayarak onaylayın ve zincir üstü kimliğinizi kesinleştirmek için işlemi gönderin.
+4. Bilgilerinizi onaylayın ve devam etmek için "Set Identity"e tıklayın.
+5. İşlemi imzalayın ve kimlik belirleme işlemini tamamlamak için gönderin.
